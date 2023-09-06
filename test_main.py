@@ -2,14 +2,15 @@
 Test goes here
 
 """
-from main import positive_real_number
+from main import readfile
 
 
-def test_positive_real_number():
+def test_readfile():
     # Test with a positive number
-    result = positive_real_number(5)
-    assert result, "Test failed for the positive number"
+    file_path = "/Users/tinayiluo/Desktop/Duke_23_Fall/Data_Engineering/emails.csv"
+    result = readfile(file_path)
+    print(result)
 
 
 if __name__ == "__main__":
-    test_positive_real_number()
+    test_readfile()
