@@ -6,7 +6,7 @@ from main import readfile
 
 
 def test_readfile():
-    file_path = "/Users/tinayiluo/Desktop/emails.csv"
+    file_path = "/Users/tinayiluo/Desktop/tinayi_week2_mini_project/emails.csv"
     result = readfile(file_path)
     print(result)
 
