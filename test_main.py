@@ -6,7 +6,6 @@ from main import readfile
 
 
 def test_readfile():
-    # Test with a positive number
     file_path = "/Users/tinayiluo/Desktop/Duke_23_Fall/Data_Engineering/emails.csv"
     result = readfile(file_path)
     print(result)
