@@ -7,17 +7,29 @@ IDS 706 Mini-Project 2
 Pandas Descriptive Statistics Script
 
 Week 2: Pandas Descriptive Statistics Script
-Requirements
+
+Requirements:
+
 Python script using Pandas for descriptive statistics
+
 Read a dataset (CSV or Excel)
+
 Generate summary statistics (mean, median, standard deviation)
+
 Create at least one data visualization
-Grading Criteria
+
+Grading Criteria:
+
 Correctly reads dataset (20 points)
+
 Accurate summary statistics (20 points)
+
 Data visualization (10 points)
-Deliverables
+
+Deliverables:
+
 Python script
+
 Generated summary report (PDF or markdown)
 
 ### Goal
