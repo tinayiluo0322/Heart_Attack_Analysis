@@ -6,62 +6,58 @@ IDS 706 Mini-Project 2
 
 Pandas Descriptive Statistics Script
 
-Week 2: Pandas Descriptive Statistics Script
-
-Requirements:
-
-Python script using Pandas for descriptive statistics
-
-Read a dataset (CSV or Excel)
-
-Generate summary statistics (mean, median, standard deviation)
-
-Create at least one data visualization
-
-Grading Criteria:
-
-Correctly reads dataset (20 points)
-
-Accurate summary statistics (20 points)
-
-Data visualization (10 points)
-
-Deliverables:
-
-Python script
-
-Generated summary report (PDF or markdown)
-
 ### Goal
 
-The goal of this project is to establish a CodeSpaces environment that automates the process of loading an email dataset using `Pandas` and executing a `readfile` function to generate descriptive statistics on the dataset, utilizing GitHub Actions.
+The goal of this project is to 
+
++ establish a CodeSpaces environment that automates the process of loading a dataset using `Pandas` and executing a `readfile` function to generate descriptive statistics on the dataset, utilizing GitHub Actions. 
+  
++ create data visualizations of the dataset using Jupyter Notebook
 
 The workflow includes running a Makefile to perform tasks such as installation (`make install`), testing (`make test`), code formatting (`make format`), linting (`make lint`), and an all-inclusive task (`make all`). This automation streamlines the data analysis process and enhances code quality.
 
 ### Preperation
 
-I used the IDS-706-Python-GitHub-template for this project. 
++ I used the IDS-706-Python-GitHub-template for this project. This template includes a `Makefile`, `requirements.txt`, `.devcontainer`, `.gitignore`, `GitHubActions`, and `Readme`.
 
-This template includes a `Makefile`, `requirements.txt`, `.devcontainer`, `.gitignore`, `GitHubActions`, and `Readme`.
++ I downloaded the `Email Spam Classification Dataset CSV` from Kaggle.
+
+### Dataset Background 
+
+`Email Spam Classification Dataset CSV` is a csv file containing related information of 5172 randomly picked email files and their respective labels for spam or not-spam classification.
+
+The csv file contains 5172 rows, each row for each email. There are 3002 columns. The first column indicates Email name. The name has been set with numbers and not recipients' name to protect privacy. The last column has the labels for prediction : 1 for spam, 0 for not spam. The remaining 3000 columns are the 3000 most common words in all the emails, after excluding the non-alphabetical characters/words. For each row, the count of each word(column) in that email(row) is stored in the respective cells. Thus, information regarding all 5172 emails are stored in a compact dataframe rather than as separate text files.
+
+#### [Resources](https://www.kaggle.com/datasets/balaka18/email-spam-classification-dataset-csv) 
 
 ### Overview
 
-In this project:
+This project creates a Python script using Pandas for descriptive statistics. The specific steps involve: 
 
++ Create a Phython script
 
-1). I added pandas 2.1.0 in the requirements.txt.
+  + Read a dataset (CSV)
 
- 
+  + Generate summary statistics (mean, median, standard deviation)
 
-2). I wrote a `readfile` function in the main.py, which reads a CSV file and returns the summary statistics.
+  + Create one data visualization
 
- 
++ Generate summary report (PDF or markdown)
+  
+### Description
 
-3). I wrote a test function `test_readfile` in the test_main.py, which checks the summary statistics of `emails.csv`.
+Step1: In the requirements.txt, adding pandas 2.1.0. 
 
-+ check the mean value of the first column in emails.csv
-+ check the minimum value of the first column in emails.csv
-+ check the maximum value of the first column in emails.csv
+Step2: In the main.py, I created a Python Script. It includes 
+       + a `readfile` function, which reads a CSV file and returns the summary statistics.
+       + a 'graph' function which provides visual context on the CSV data.
+
+Step3: In the test_main.py, I wrote a test function `test_readfile` , which checks the summary statistics of `emails.csv`.
+       + check the mean value of the second column (letter "the") in emails.csv
+       + check the median value of the second column (letter "the") in emails.csv
+       + check the standard deviation value of the second column (letter "the") in emails.csv
+
+Step4: I generate summary report (PDF or markdown) from Jupyter Notebook
 
 ### Check Format and Test Approval Image
 
