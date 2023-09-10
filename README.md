@@ -8,7 +8,7 @@ Pandas Descriptive Statistics Script
 
 ### Goal
 
-The goal of this project is to 
+The goal of this project is to:
 
 + establish a CodeSpaces environment that automates the process of loading a dataset using `Pandas` and executing a `readfile` function to generate descriptive statistics on the dataset, utilizing GitHub Actions. 
   
@@ -24,7 +24,7 @@ The workflow includes running a Makefile to perform tasks such as installation (
 
 ### Dataset Background 
 
-`Email Spam Classification Dataset CSV` is a csv file containing related information of 5172 randomly picked email files and their respective labels for spam or not-spam classification.
+`Email Spam Classification Dataset CSV` (simplify as `email.csv`) is a csv file containing related information of 5172 randomly picked email files and their respective labels for spam or not-spam classification.
 
 The csv file contains 5172 rows, each row for each email. There are 3002 columns. The first column indicates Email name. The name has been set with numbers and not recipients' name to protect privacy. The last column has the labels for prediction : 1 for spam, 0 for not spam. The remaining 3000 columns are the 3000 most common words in all the emails, after excluding the non-alphabetical characters/words. For each row, the count of each word(column) in that email(row) is stored in the respective cells. Thus, information regarding all 5172 emails are stored in a compact dataframe rather than as separate text files.
 
@@ -46,18 +46,23 @@ This project creates a Python script using Pandas for descriptive statistics. Th
   
 ### Description
 
-Step1: In the requirements.txt, adding pandas 2.1.0. 
+Step1: In the requirements.txt, I added pandas 2.1.0. 
 
 Step2: In the main.py, I created a Python Script. It includes 
+
        + a `readfile` function, which reads a CSV file and returns the summary statistics.
+       
        + a 'graph' function which provides visual context on the CSV data.
 
 Step3: In the test_main.py, I wrote a test function `test_readfile` , which checks the summary statistics of `emails.csv`.
+
        + check the mean value of the second column (letter "the") in emails.csv
+       
        + check the median value of the second column (letter "the") in emails.csv
+       
        + check the standard deviation value of the second column (letter "the") in emails.csv
 
-Step4: I generate summary report (PDF or markdown) from Jupyter Notebook
+Step4: I generated summary report (PDF or markdown) from Jupyter Notebook
 
 ### Check Format and Test Approval Image
 
