@@ -1,3 +1,4 @@
+[![CI](https://github.com/nogibjj/tinayi_week2_mini_project/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/tinayi_week2_mini_project/actions/workflows/cicd.yml)
 
 ## Pandas Descriptive Statistics Script
 
