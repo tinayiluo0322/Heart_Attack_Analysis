@@ -20,15 +20,50 @@ The workflow includes running a Makefile to perform tasks such as installation (
 
 + I used the IDS-706-Python-GitHub-template for this project. This template includes a `Makefile`, `requirements.txt`, `.devcontainer`, `.gitignore`, `GitHubActions`, and `Readme`.
 
-+ I downloaded the `Email Spam Classification Dataset CSV` from Kaggle.
++ I downloaded the `Heart Attack Analysis & Prediction Dataset` from Kaggle.
 
-### Dataset Background 
+### Dataset Description
 
-`Email Spam Classification Dataset CSV` (simplify as `email.csv`) is a csv file containing related information of 5172 randomly picked email files and their respective labels for spam or not-spam classification.
+`Heart Attack Analysis & Prediction Dataset` (simplify as `heart.csv`) is a csv file containing related information of 302 randomly picked people and their respective information including age, sex, exercise induced angina, number of major vessels, chest pain type, resting blood pressure, cholestoral, fasting blood sugar, resting electrocardiographic results, and chances of heart attack.
 
-The csv file contains 5172 rows, each row for each email. There are 3002 columns. The first column indicates Email name. The name has been set with numbers and not recipients' name to protect privacy. The last column has the labels for prediction : 1 for spam, 0 for not spam. The remaining 3000 columns are the 3000 most common words in all the emails, after excluding the non-alphabetical characters/words. For each row, the count of each word(column) in that email(row) is stored in the respective cells. Thus, information regarding all 5172 emails are stored in a compact dataframe rather than as separate text files.
++ Age : Age of the patient
 
-#### [Resources](https://www.kaggle.com/datasets/balaka18/email-spam-classification-dataset-csv) 
++ Sex : Sex of the patient
+
++ exang: exercise induced angina (1 = yes; 0 = no)
+
++ ca: number of major vessels (0-3)
+
++ cp : Chest Pain type chest pain type
+
+  + Value 1: typical angina
+
+  + Value 2: atypical angina
+
+  + Value 3: non-anginal pain
+
+  + Value 4: asymptomatic
+
++ trtbps : resting blood pressure (in mm Hg)
+
++ chol : cholestoral in mg/dl fetched via BMI sensor
+
++ fbs : (fasting blood sugar > 120 mg/dl) (1 = true; 0 = false)
+
++ rest_ecg : resting electrocardiographic results
+
+  + Value 0: normal
+
+  + Value 1: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)
+
+  + Value 2: showing probable or definite left ventricular hypertrophy by Estes' criteria
+
+  + thalach : maximum heart rate achieved
+
++ target : 0= less chance of heart attack 1= more chance of heart attack
+
+
+#### [Resources](https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-prediction-dataset) 
 
 ### Overview
 
@@ -40,9 +75,9 @@ This project creates a Python script using Pandas for descriptive statistics. Th
 
   + Generate summary statistics (mean, median, standard deviation)
 
-  + Create one data visualization
+  + Create data visualizations
 
-+ Generate summary report (PDF or markdown)
++ Generate summary report (PDF)
   
 ### Description
 
@@ -50,19 +85,25 @@ Step1: In the requirements.txt, I added pandas 2.1.0.
 
 Step2: In the main.py, I created a Python Script. It includes 
 
-       + a `readfile` function, which reads a CSV file and returns the summary statistics.
+       + a `readfile` function, which reads a CSV file.
        
-       + a 'graph' function which provides visual context on the CSV data.
+       + a 'summary' function which generates summary statistics for the numeric columns in the DataFrame heart.csv.
 
-Step3: In the test_main.py, I wrote a test function `test_readfile` , which checks the summary statistics of `emails.csv`.
+       + a 'median' function which calculate the median value for each column in heart.csv
 
-       + check the mean value of the second column (letter "the") in emails.csv
+       + a 'histogram' function which generate histogram for each column in heart.csv
+
+       + a 'scatter_age_blood_pressure' function which generate scatter plot with fitted line for the 4th column (resting blood pressure) and the 1st column (age) in heart.csv
+
+Step3: In the test_main.py, I wrote two test functions `test_readfile` and `test_median`, which checks the summary statistics of `emails.csv`.
+
+       + check the mean value of the fourth column (resting blood pressure)
        
-       + check the median value of the second column (letter "the") in emails.csv
+       + check the median value of the fourth column (resting blood pressure)
        
-       + check the standard deviation value of the second column (letter "the") in emails.csv
+       + check the standard deviation value of the fourth column (resting blood pressure)
 
-Step4: I generated summary report (PDF or markdown) from Jupyter Notebook
+Step4: I generated summary report (PDF) from Jupyter Notebook
 
 ### Check Format and Test Approval Image
 
@@ -74,9 +115,9 @@ Step4: I generated summary report (PDF or markdown) from Jupyter Notebook
 + format code `make format`
 + test code `make test`
 
-<img width="1124" alt="Screen Shot 2023-09-08 at 4 54 29 PM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/defbc82f-82cc-4b36-b05b-0170b1014acd">
+<img width="1001" alt="Screen Shot 2023-09-10 at 11 58 29 PM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/96b1d4cf-7e38-435c-aafb-0c8de8a2de97">
 
 + code `make all` executes install, lint, format, and test targets
 
-<img width="1120" alt="Screen Shot 2023-09-08 at 4 55 01 PM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/349a11eb-7f99-44ba-afd3-e456ba80f167">
+<img width="992" alt="Screen Shot 2023-09-10 at 11 59 16 PM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/00408673-e649-49f7-a4c5-e8e2f3777a5f">
 
