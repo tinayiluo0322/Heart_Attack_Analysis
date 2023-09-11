@@ -25,6 +25,7 @@ def median(a):
     return median_values
 
 
+# Generate histogram for each column in heart.csv
 def histogram(a):
     df = readfile(a)
     columns = df.columns
