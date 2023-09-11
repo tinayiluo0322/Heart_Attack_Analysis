@@ -2,11 +2,21 @@
 Test goes here
 
 """
-from main import readfile, summary, median
-
+from main import readfile, summary, median, histogram, scatter_age_blood_pressure
+import pandas as pd
+import matplotlib.pyplot as plt
 
 # test cases
+
+
 def test_readfile():
+    file_path = "heart.csv"
+    data_csv = readfile(file_path)
+    assert isinstance(data_csv, pd.DataFrame)
+    assert not data_csv.empty
+
+
+def test_summary():
     file_path = "heart.csv"
     summary_result = summary(file_path)
     # mean value of the fourth column resting blood pressure
@@ -28,6 +38,17 @@ def test_median():
     assert median_4_column == 130.0
 
 
+def test_histogram():
+    histogram("heart.csv")
+
+
+def test_scatter_age_blood_pressure():
+    scatter_age_blood_pressure("heart.csv")
+
+
 if __name__ == "__main__":
     test_readfile()
+    test_summary()
     test_median()
+    test_histogram()
+    test_scatter_age_blood_pressure()

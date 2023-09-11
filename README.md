@@ -107,7 +107,9 @@ Step 2: In the main.py, I created a Python Script. It includes
 <img width="892" alt="Screen Shot 2023-09-11 at 9 30 08 AM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/3edff112-b69d-4238-a769-cf5b36039231">
 
 
-Step 3: In the `test_main.py`, I wrote two test functions `test_readfile` and `test_median`, which checks the summary statistics of `heart.csv`.
+Step 3: In the `test_main.py`, I wrote five test functions `test_readfile`, `test_summary`, `test_median`, `test_histogram`,`test_scatter_age_blood_pressure`, which checks the summary statistics and data visualizations of `heart.csv`.
+
+       + check file 
 
        + check the mean value of the fourth column (resting blood pressure)
        
@@ -115,7 +117,13 @@ Step 3: In the `test_main.py`, I wrote two test functions `test_readfile` and `t
        
        + check the standard deviation value of the fourth column (resting blood pressure)
 
-<img width="750" alt="Screen Shot 2023-09-11 at 12 58 25 AM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/5ee5aa36-4d13-4387-a849-7fe3e6d2c239">
+       + check histogram for each column
+
+       + check scatter plot for age and resting blood pressure
+
+<img width="869" alt="Screen Shot 2023-09-11 at 10 01 41 AM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/af2210b8-8a18-4803-9e63-9ba0880f26ed">
+
+<img width="886" alt="Screen Shot 2023-09-11 at 10 02 07 AM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/91e65d46-9e3d-4e41-b952-96b42f83e48e">
 
 
 Step 4: I generated Data Visualizations
@@ -177,9 +185,8 @@ Step 5: I generated the summary report (PDF) from Jupyter Notebook
 + format code `make format`
 + test code `make test`
 
-<img width="1001" alt="Screen Shot 2023-09-10 at 11 58 29 PM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/96b1d4cf-7e38-435c-aafb-0c8de8a2de97">
+<img width="989" alt="Screen Shot 2023-09-11 at 9 58 19 AM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/28c1051c-fa8c-4c4b-b790-b6ce4b5cabdf">
 
 + code `make all` executes install, lint, format, and test targets
 
-<img width="992" alt="Screen Shot 2023-09-10 at 11 59 16 PM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/00408673-e649-49f7-a4c5-e8e2f3777a5f">
-
+<img width="985" alt="Screen Shot 2023-09-11 at 9 58 46 AM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/40862bf0-0204-4217-82b6-460cdeff4b87">
