@@ -118,7 +118,7 @@ Step 3: In the `test_main.py`, I wrote two test functions `test_readfile` and `t
 <img width="750" alt="Screen Shot 2023-09-11 at 12 58 25 AM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/5ee5aa36-4d13-4387-a849-7fe3e6d2c239">
 
 
-Step 4: I generated [Data Visualizations](Data_Visualization.html)
+Step 4: I generated Data Visualizations
 
 + summary statistics
 
