@@ -40,18 +40,16 @@ def histogram(a):
         plt.show()  # Display the histogram for the current column
 
 
-# Generate scatter plot with fitted line for the 4th column(resting blood pressure) and the 1st column (age) in heart.csv
-def scatter_age_blood_pressure(a):
-    df = readfile(a)
+# Generate scatter plot for the 4th column(resting blood pressure) and the 1st column (age) in heart.csv
+def scatter_age_blood_pressure(file_path):
+    df = readfile(file_path)
     x = df.iloc[:, 0]  # 1st column (age)
     y = df.iloc[:, 3]  # 4th column (resting blood pressure)
     plt.scatter(x, y, alpha=0.5, label="Data Points")
     plt.xlabel("Age")
     plt.ylabel("Resting Blood Pressure (mm Hg)")
     plt.title("Scatter Plot: Age vs. Resting Blood Pressure")
-    # Create a line plot
-    plt.plot(x, y, color="red", linewidth=2, label="Line Fit")
-    plt.grid(True)  # Add grid lines for reference
+    plt.grid(True)
     # plt.legend()
     plt.show()
 
