@@ -81,11 +81,12 @@ This project creates a Python script using Pandas for descriptive statistics. Th
   
 ### Description
 
-Step1: In the requirements.txt, I added pandas 2.1.0 and matplotlib==3.7.2. 
+Step 1: In the requirements.txt, I added pandas 2.1.0 and matplotlib==3.7.2. 
 
 <img width="914" alt="Screen Shot 2023-09-11 at 12 56 29 AM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/29707693-8415-4eeb-b754-53140f1bbf54">
 
-Step2: In the main.py, I created a Python Script. It includes 
+
+Step 2: In the main.py, I created a Python Script. It includes 
 
        + a `readfile` function, which reads a CSV file.
        
@@ -103,7 +104,8 @@ Step2: In the main.py, I created a Python Script. It includes
 
 <img width="924" alt="Screen Shot 2023-09-11 at 1 05 03 AM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/34ccfa91-65b3-4826-8631-a05caecb2845">
 
-Step3: In the `test_main.py`, I wrote two test functions `test_readfile` and `test_median`, which checks the summary statistics of `heart.csv`.
+
+Step 3: In the `test_main.py`, I wrote two test functions `test_readfile` and `test_median`, which checks the summary statistics of `heart.csv`.
 
        + check the mean value of the fourth column (resting blood pressure)
        
@@ -113,7 +115,8 @@ Step3: In the `test_main.py`, I wrote two test functions `test_readfile` and `te
 
 <img width="750" alt="Screen Shot 2023-09-11 at 12 58 25 AM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/5ee5aa36-4d13-4387-a849-7fe3e6d2c239">
 
-Step4: I generated data visualization
+
+Step 4: I generated data visualizations
 
 + summary statistics
 
@@ -131,7 +134,8 @@ Step4: I generated data visualization
 
 <img width="592" alt="Screen Shot 2023-09-11 at 1 15 43 AM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/cac9f87e-a447-4b47-93c3-c6856d4c0f74">
 
-Step5: I generated summary report (PDF) from Jupyter Notebook
+
+Step 5: I generated the summary report (PDF) from Jupyter Notebook
 
 #### [Summary Report PDF](Summary-Report.pdf)
 
