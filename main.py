@@ -41,8 +41,8 @@ def histogram(a):
 
 
 # Generate scatter plot for the 4th column(resting blood pressure) and the 1st column (age) in heart.csv
-def scatter_age_blood_pressure(file_path):
-    df = readfile(file_path)
+def scatter_age_blood_pressure(a):
+    df = readfile(a)
     x = df.iloc[:, 0]  # 1st column (age)
     y = df.iloc[:, 3]  # 4th column (resting blood pressure)
     plt.scatter(x, y, alpha=0.5, label="Data Points")
@@ -55,8 +55,7 @@ def scatter_age_blood_pressure(file_path):
 
 
 # if __name__ == "__main__":
-# file_path = "heart.csv"
-# readfile(file_path)
-# summary(file_path)
-# histogram(file_path)
-# scatter_age_blood_pressure(file_path)
+# readfile("heart.csv")
+# summary("heart.csv")
+# histogram("heart.csv")
+# scatter_age_blood_pressure("heart.csv")

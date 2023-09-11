@@ -12,7 +12,9 @@ The goal of this project is to:
 
 + establish a CodeSpaces environment that automates the process of loading a dataset using `Pandas` and executing a `readfile` function to generate descriptive statistics on the dataset, utilizing GitHub Actions. 
   
-+ create data visualizations of the dataset using Jupyter Notebook
++ create data visualizations of the dataset using `matplotlib`
+
++ create summary report using `Jupyter Notebook`
 
 The workflow includes running a Makefile to perform tasks such as installation (`make install`), testing (`make test`), code formatting (`make format`), linting (`make lint`), and an all-inclusive task (`make all`). This automation streamlines the data analysis process and enhances code quality.
 
@@ -102,7 +104,7 @@ Step 2: In the main.py, I created a Python Script. It includes
 
 <img width="798" alt="Screen Shot 2023-09-11 at 12 57 40 AM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/17b904d4-5058-406a-8cff-925a905facff">
 
-<img width="924" alt="Screen Shot 2023-09-11 at 1 05 03 AM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/34ccfa91-65b3-4826-8631-a05caecb2845">
+<img width="892" alt="Screen Shot 2023-09-11 at 9 30 08 AM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/3edff112-b69d-4238-a769-cf5b36039231">
 
 
 Step 3: In the `test_main.py`, I wrote two test functions `test_readfile` and `test_median`, which checks the summary statistics of `heart.csv`.
@@ -116,7 +118,7 @@ Step 3: In the `test_main.py`, I wrote two test functions `test_readfile` and `t
 <img width="750" alt="Screen Shot 2023-09-11 at 12 58 25 AM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/5ee5aa36-4d13-4387-a849-7fe3e6d2c239">
 
 
-Step 4: I generated data visualizations
+Step 4: I generated [Data Visualizations](Data_Visualization.html)
 
 + summary statistics
 
@@ -126,13 +128,39 @@ Step 4: I generated data visualizations
 
 <img width="916" alt="Screen Shot 2023-09-11 at 1 13 15 AM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/50e1b86f-4158-4333-984a-4d32e5b2fb42">
 
-+ histogram of each column (ex: histogram of resting blood pressure)
++ histogram of each column
 
-<img width="702" alt="Screen Shot 2023-09-11 at 1 13 48 AM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/99cffdca-fe47-4be2-a8d5-7f02003b509b">
+![image](https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/698dc927-6391-4266-8dcc-fa475a9df65a)
+
+![image](https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/658fd114-57b4-4d5d-a65a-a4f397e38248)
+
+![image](https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/aded97be-f769-47a9-81b1-4f5efe5118a5)
+
+![image](https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/46f27fd7-f0ab-45af-9ecd-33a0403cc631)
+
+![image](https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/bbe3d598-306d-4ed3-b3dc-61c8a37438a5)
+
+![image](https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/0ad57724-7e35-4d8a-8f8f-a50541f7a050)
+
+![image](https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/212788dc-c385-4953-a8d8-c8fc8cceac6f)
+
+![image](https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/861c299c-d037-45b4-9d0f-de29e1ca4de7)
+
+![image](https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/f4d65bca-c483-4866-a734-0576b5076cdb)
+
+![image](https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/c8c2ae73-95c9-410f-849b-4880bbcdcb66)
+
+![image](https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/e786fbf7-f238-48ef-9f26-705967b8843a)
+
+![image](https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/4f775859-6b73-4cfa-af1b-0e8bdd34b7b3)
+
+![image](https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/46be7348-fd3c-41c9-a608-bd1c8921c1f7)
+
+![image](https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/2c5310b6-e218-4727-8c7f-59072ff97f8d)
 
 + scatter plot for resting blood pressure and age in heart.csv
 
-<img width="592" alt="Screen Shot 2023-09-11 at 1 15 43 AM" src="https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/cac9f87e-a447-4b47-93c3-c6856d4c0f74">
+![image](https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/31a73193-129e-47dd-ac9b-d7a87e974f84)
 
 
 Step 5: I generated the summary report (PDF) from Jupyter Notebook
