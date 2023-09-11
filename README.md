@@ -8,8 +8,6 @@ Pandas Descriptive Statistics Script
 
 ### Goal
 
-The goal of this project is to:
-
 + establish a CodeSpaces environment that automates the process of loading a dataset using `Pandas` and executing a `readfile` function to generate descriptive statistics on the dataset, utilizing GitHub Actions. 
   
 + create data visualizations of the dataset using `matplotlib`
