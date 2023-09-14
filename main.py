@@ -54,8 +54,9 @@ def scatter_age_blood_pressure(a):
     plt.show()
 
 
-# if __name__ == "__main__":
-# readfile("heart.csv")
-# summary("heart.csv")
-# histogram("heart.csv")
-# scatter_age_blood_pressure("heart.csv")
+if __name__ == "__main__":
+    readfile("heart.csv")
+    output = summary("heart.csv")
+    histogram("heart.csv")
+    scatter_age_blood_pressure("heart.csv")
+    output.to_html("output.html", index=False)
