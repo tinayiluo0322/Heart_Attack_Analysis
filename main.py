@@ -56,7 +56,7 @@ def scatter_age_blood_pressure(a):
 
 if __name__ == "__main__":
     readfile("heart.csv")
-    output = summary("heart.csv")
-    histogram("heart.csv")
-    scatter_age_blood_pressure("heart.csv")
-    output.to_html("output.html", index=False)
+    summary("heart.csv").to_html("output/describe_results.html", index=False)
+    histogram("heart.csv").to_html("output/histogram.html", index=False)
+    scatter_age_blood_pressure("heart.csv").to_html("output/scatter.html", index=False)
+    
