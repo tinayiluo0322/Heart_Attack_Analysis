@@ -38,9 +38,10 @@ def histogram(a):
         plt.ylabel("Frequency")
         plt.title(f"Histogram of {column}")
         plt.grid(True)
-        plt.show()  # Display the histogram for the current column
+        #plt.show()  # Display the histogram for the current column
 
-    plt.savefig("histogram.png", format="png")
+        plt.savefig("output/histogram.png", format="png")
+        plt.close()
 
 
 # Generate scatter plot for the 4th column(resting blood pressure) and the 1st column (age) in heart.csv
@@ -54,9 +55,10 @@ def scatter_age_blood_pressure(a):
     plt.title("Scatter Plot: Age vs. Resting Blood Pressure")
     plt.grid(True)
     # plt.legend()
-    plt.show()
+    #plt.show()
 
-    plt.savefig("scatter.png", format="png")
+    plt.savefig("output/scatter.png", format="png")
+    plt.close()
 
 
 if __name__ == "__main__":
