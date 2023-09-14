@@ -1,6 +1,7 @@
 """
 Main code
 """
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -55,6 +56,8 @@ def scatter_age_blood_pressure(a):
 
 
 if __name__ == "__main__":
+    output_dir='output'
+    os.makedirs(output_dir, exist_ok=True)
     readfile("heart.csv")
     summary("heart.csv").to_html("output/describe_results.html", index=False)
     histogram("heart.csv").to_html("output/histogram.html", index=False)
