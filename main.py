@@ -40,6 +40,8 @@ def histogram(a):
         plt.grid(True)
         plt.show()  # Display the histogram for the current column
 
+    plt.savefig("histogram.png", format="png")
+
 
 # Generate scatter plot for the 4th column(resting blood pressure) and the 1st column (age) in heart.csv
 def scatter_age_blood_pressure(a):
@@ -54,12 +56,13 @@ def scatter_age_blood_pressure(a):
     # plt.legend()
     plt.show()
 
+    plt.savefig("scatter.png", format="png")
+
 
 if __name__ == "__main__":
-    output_dir='output'
+    output_dir = "output"
     os.makedirs(output_dir, exist_ok=True)
     readfile("heart.csv")
     summary("heart.csv").to_html("output/describe_results.html", index=False)
-    histogram("heart.csv").to_html("output/histogram.html", index=False)
-    scatter_age_blood_pressure("heart.csv").to_html("output/scatter.html", index=False)
-    
+    histogram("heart.csv")
+    scatter_age_blood_pressure("heart.csv")
