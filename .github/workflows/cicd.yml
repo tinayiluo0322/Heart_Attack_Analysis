@@ -19,7 +19,7 @@ jobs:
         run: make test
       - name: format
         run: make format
-      - name: deploy
+      #- name: deploy
         #run: make deploy
       - name: Run main script
         run: main.py
